@@ -169,38 +169,41 @@
                         </div>
 
                         <div class="col-lg-6 col-12">
-                            <form class="custom-form consulting-form bg-white shadow-lg mb-5 mb-lg-0" action="https://formspree.io/f/mjkarewl" method="POST" role="form">
-                                <div class="consulting-form-header d-flex align-items-center">
-                                    <h3 class="mb-4">Get a Free Quotation</h3>
+                            <form class="custom-form consulting-form bg-white shadow-lg mb-5 mb-lg-0" 
+                                  action="https://formspree.io/f/mjkarewl" 
+                                  method="POST" role="form">
+
+                              <div class="consulting-form-header d-flex align-items-center">
+                                <h3 class="mb-4">Get a Free Quotation</h3>
+                              </div>
+
+                              <div class="consulting-form-body">
+                                <div class="row">
+                                  <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="name" id="volunteer-name" class="form-control" placeholder="Your Name" required>
+                                  </div>
+
+                                  <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="email" name="email" id="volunteer-email" class="form-control" placeholder="yours@gmail.com" required>
+                                  </div>
                                 </div>
 
-                                <div class="consulting-form-body">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="text" name="volunteer-name" id="volunteer-name" class="form-control" placeholder="Your Name" required>
-                                        </div>
+                                <select class="form-select form-control" name="service" id="job-salary" aria-label="Service Type">
+                                  <option selected disabled>Service Type</option>
+                                  <option value="Asset Tagging">Asset Tagging</option>
+                                  <option value="Graphics Design">Graphics Design</option>
+                                  <option value="Web Design">Web Design</option>
+                                  <option value="Event Planning">Event Planning</option>
+                                  <option value="Baking Services">Baking Services</option>
+                                  <option value="Grocery Supply">Grocery Supply</option>
+                                </select>
 
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="email" name="volunteer-email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="yours@gmail.com" required>
-                                        </div>
-                                    </div>
+                                <textarea name="message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
 
-                                    <select class="form-select form-control" name="job-salary" id="job-salary" aria-label="Default select example">
-                                        <option selected>Service Type</option>
-                                        <option value="1">Asset Tagging</option>
-                                        <option value="2">Graphics Design</option>
-                                        <option value="2">Web Design</option>
-                                        <option value="2">Event Planning</option>
-                                        <option value="2">Baking Services</option>
-                                        <option value="2">Grocery Supply</option>
-                                    </select>
-
-                                    <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
-
-                                    <div class="col-lg-6 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Submit Request</button>
-                                    </div>
+                                <div class="col-lg-6 col-md-10 col-8 mx-auto">
+                                  <button type="submit" class="form-control">Submit Request</button>
                                 </div>
+                              </div>
                             </form>
                         </div>
 
